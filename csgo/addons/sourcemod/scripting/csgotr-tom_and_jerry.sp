@@ -325,10 +325,12 @@ public Hook_StartTouch(int entity, int client)
                     SDKUnhook(entity, SDKHook_StartTouch, Hook_StartTouch);
                     RemoveEntity(entity);
                     if(GetRandomInt(0, 10) > 7){
-                        char s_weapons[5][] = {"weapon_healthshot","weapon_hammer","weapon_axe","weapon_spanner","weapon_taser"};
+                        char s_weapon[32], s_weapons[5][] = {"weapon_knife","weapon_hammer","weapon_axe","weapon_spanner","weapon_taser"};
                         int i_weapon = GetRandomInt(0,4);
-                        GivePlayerItem(client, s_weapons[i_weapon]);
-                        CPrintToChatAll("%s%s %t", s_tag_color, s_tag, "Player Prize Weapon", client, s_weapons[i_weapon], (GetClientTeam(client)==2) ? "Jerry" : "Tom");
+                        Format(s_weapon, sizeof(s_weapon), "%s", GetClientTeam(client)==2 ? s_jerry_weapon : s_tom_weapon);
+                        Format(s_weapon, sizeof(s_weapon), "%s", StrEqual(s_weapon, s_weapons[i_weapon]) ? "weapon_healthshot" : s_weapons[i_weapon]);
+                        GivePlayerItem(client, s_weapon);
+                        CPrintToChatAll("%s%s %t", s_tag_color, s_tag, "Player Prize Weapon", client, s_weapon, (GetClientTeam(client)==2) ? "Jerry" : "Tom");
                     }else{
                         int i_health = (GetClientTeam(client)==2) ? i_milk_prize_health : i_cheese_prize_health;
                         SetEntityHealth(client, GetClientHealth(client)+i_health);
