@@ -80,14 +80,14 @@
 
     "Game Start Message Jerry"
     {
-		"en"			"Your aim in the game is to defeat Tom by using the powers given to you. Whether you want to be fast and run away, try to stay last, or be the first to beat Tom and win the game. Increase your health with the cheeses given throughout the game. Maybe something else can come out instead of health :)"
-		"tr"			"Oyunda Amacınız Size Verilen Güçleri Kullanarak Tom'u Alt Etmektir. İster hızlı olup kaçmayı tercih edin sona kalmayı deneyin isterseniz Tom'u ilk alt eden olup oyunu kazanın. Oyun boyunca verilen peynirler ile canınızı yükseltin. Belki can yerine başka birşey de çıkabilir :)"
+		"en"			"Your aim in the game is to defeat Tom by using the powers given to you.\nWhether you want to be fast and run away, try to stay last, or be the first to beat Tom and win the game.\nIncrease your health with the cheeses given throughout the game. Maybe something else can come out instead of health :)"
+		"tr"			"Oyunda Amacınız Size Verilen Güçleri Kullanarak Tom'u Alt Etmektir.\nİster hızlı olup kaçmayı tercih edin sona kalmayı deneyin isterseniz Tom'u ilk alt eden olup oyunu kazanın.\nOyun boyunca verilen peynirler ile canınızı yükseltin.\nBelki can yerine başka birşey de çıkabilir :)"
 	}
 
     "Game Start Message Tom"
     {
-		"en"			"Your aim in the game is to defeat Jerry by using the powers given to you. Beware, if you die, Jerry who killed you wins. Increase your life with the milk given throughout the game. Maybe something else can come out instead of life :)"
-		"tr"			"Oyunda Amacınız Size Verilen Güçleri Kullanarak Jerry'leri Alt Etmektir. Dikkat edin ölürseniz sizi öldüren Jerry kazanır. Oyun boyunca verilen sütler ile canınızı yükseltin. Belki can yerine başka birşey de çıkabilir :)"
+		"en"			"Your aim in the game is to defeat Jerry by using the powers given to you.\nBeware, if you die, Jerry who killed you wins.\nIncrease your life with the milk given throughout the game.\nMaybe something else can come out instead of life :)"
+		"tr"			"Oyunda Amacınız Size Verilen Güçleri Kullanarak Jerry'leri Alt Etmektir.\nDikkat edin ölürseniz sizi öldüren Jerry kazanır.\nOyun boyunca verilen sütler ile canınızı yükseltin.\nBelki can yerine başka birşey de çıkabilir :)"
 	}
 
     "Player Spawn Error"
@@ -118,7 +118,7 @@
     "Winner"
     {
         "#format" 		"{1:N}"
-		"en"			"{green}Jerry {darkred}{1} {green} won the orchid}Tom and Jerry {green}game. Congratulations."
+		"en"			"{green}Jerry {darkred}{1} {green} won the {orchid}Tom and Jerry {green}game. Congratulations."
 		"tr"			"{orchid}Tom ve Jerry {green}oyununu sona kalarak {darkred}{1} {green}adlı Jerry kazandı. Tebrikler."
 	}
 

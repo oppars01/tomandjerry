@@ -134,8 +134,8 @@ void CVAR_Load(){
     cv_jerry_speed = CreateConVar("sm_tomandjerry-jerry_speed", "1.5", "Jerry'nin aşcağı hız miktarı.");
     cv_cheese_prize_health = CreateConVar("sm_tomandjerry-cheese_prize_health", "15", "Peynir ödülünde Jerry'nin alacağı can miktarı.");
     cv_tomandjerry_flags = CreateConVar("sm_tomandjerry-flags", "", "Komutçu ve Root hariç kullanacak yetkililerin harfleri. Virgül (,) ile ayırınız.");
-    cv_tom_weapon = CreateConVar("sm_tomandjerry-tom_weapon", "weapon_fists", "Tom başlangıç silahı.");
-    cv_jerry_weapon = CreateConVar("sm_tomandjerry-jerry_weapon", "weapon_fists", "Jerry başlangıç silahı.");
+    cv_tom_weapon = CreateConVar("sm_tomandjerry-tom_weapon", "weapon_knife", "Tom başlangıç silahı.");
+    cv_jerry_weapon = CreateConVar("sm_tomandjerry-jerry_weapon", "weapon_knife", "Jerry başlangıç silahı.");
     AutoExecConfig(true, "tom_and_jerry","CSGO_Turkiye");
     i_tom_health_rate = GetConVarInt(cv_tom_health_rate);
     f_tom_speed = GetConVarFloat(cv_tom_speed);
@@ -220,9 +220,9 @@ int MenuCallback(Menu menu, MenuAction action, int client, int param2)
                             ShowOverlayAll("models/csgo-turkiye_com/plugin/tomandjerry/start", 5.0);
                             DeleteTomAndJerryItemsAndWeapons();
                             char s_message[ 512 ];
-                            Format(s_message, sizeof(s_message),"Game Start Message Jerry");
+                            Format(s_message, sizeof(s_message),"%t", "Game Start Message Jerry");
                             SendPanelToTeam(s_message, 2);
-                            Format(s_message, sizeof(s_message),"Game Start Message Tom");
+                            Format(s_message, sizeof(s_message),"%t", "Game Start Message Tom");
                             SendPanelToTeam(s_message, 3);
                             for(int i = 1; i <= MaxClients; i++)PlayerStartClient(i);
                             CreateTimer(5.0, GameStart);
@@ -325,8 +325,8 @@ public Hook_StartTouch(int entity, int client)
                     SDKUnhook(entity, SDKHook_StartTouch, Hook_StartTouch);
                     RemoveEntity(entity);
                     if(GetRandomInt(0, 10) > 7){
-                        char s_weapons[6][] = {"weapon_healthshot","weapon_knife","weapon_hammer","weapon_axe","weapon_spanner","weapon_taser"};
-                        int i_weapon = GetRandomInt(0,5);
+                        char s_weapons[5][] = {"weapon_healthshot","weapon_hammer","weapon_axe","weapon_spanner","weapon_taser"};
+                        int i_weapon = GetRandomInt(0,4);
                         GivePlayerItem(client, s_weapons[i_weapon]);
                         CPrintToChatAll("%s%s %t", s_tag_color, s_tag, "Player Prize Weapon", client, s_weapons[i_weapon], (GetClientTeam(client)==2) ? "Jerry" : "Tom");
                     }else{
@@ -366,6 +366,7 @@ void GameStop(){
         for(int i = 1; i <= MaxClients; i++)
             if(IsValidClient(i)){
                 SetEntPropFloat(i, Prop_Data, "m_flLaggedMovementValue", 1.0);
+                SetEntityHealth(i, 100);
                 char s_player_model[PLATFORM_MAX_PATH];
                 GetClientCookie(i, h_player_model, s_player_model, sizeof(s_player_model));
                 if (!StrEqual(s_player_model, "", true))SetEntityModel(i, s_player_model);
