@@ -1,0 +1,159 @@
+"Phrases"
+{
+    "Console Message"
+	{
+		"en"			"This command is not used in the console."
+		"tr"			"Bu komut konsolda kullanılmamaktadır."
+	}
+
+    "Menu Title"
+	{
+		"en"			"Tom and Jerry"
+		"tr"			"Tom ve Jerry"
+	}
+
+    "Stop"
+	{
+		"en"			"Game Stop"
+		"tr"			"Oyunu Durdur"
+	}
+
+    "Start"
+	{
+		"en"			"Game Start"
+		"tr"			"Oyunu Başlat"
+	}
+
+    "Tom Position"
+	{
+		"en"			"Tom Start Position"
+		"tr"			"Tom Başlangıç Konumu"
+	}
+
+    "Jerry Position"
+	{
+		"en"			"Jerry Start Position"
+		"tr"			"Jerry Başlangıç Konumu"
+	}
+
+    "Game Inactive"
+    {
+		"en"			"{darkred}The Game Is Already Inactive"
+		"tr"			"{darkred}Oyun Zaten Aktif Değil"
+	}
+
+    "Game Active"
+    {
+		"en"			"{darkred}The Game Is Already Active"
+		"tr"			"{darkred}Oyun Zaten Aktif"
+	}
+
+    "Position Error"
+    {
+		"en"			"{darkred}Tom and Jerry's starting positions must be set for the game to start."
+		"tr"			"{darkred}Oyunun başlaması için Tom ve Jerry'nin başlangıç konumları ayarlı olmalıdır."
+	}
+
+    "Team Count Error"
+    {
+		"en"			"{darkred}At least {orchid}1 Tom (CT) {darkred}and {orchid}2 Jerry (T) {darkred}are required to start the game."
+		"tr"			"{darkred}Oyunun başlaması için en az {orchid}1 adet Tom (CT) {darkred}ve {orchid}2 adet Jerry'nin (T) {darkred}olması gereklidir."
+	}
+
+    "TR_PointOutsideWorld"
+    {
+		"en"			"{darkred}Please select a valid location on the map."
+		"tr"			"{darkred}Lütfen harita içerisinde geçerli bir konum seçiniz."
+	}
+
+    "Jerry Success"
+    {
+		"en"			"{orchid}Jerry {green}set initial position successful."
+		"tr"			"{orchid}Jerry {green}başlangıç konumu ayarlama başarılı."
+	}
+
+    "Tom Success"
+    {
+		"en"			"{orchid}Tom {green}set initial position successful."
+		"tr"			"{orchid}Tom {green}başlangıç konumu ayarlama başarılı."
+	}
+
+    "Game Start Message Jerry"
+    {
+		"en"			"Your aim in the game is to defeat Tom by using the powers given to you. Whether you want to be fast and run away, try to stay last, or be the first to beat Tom and win the game. Increase your health with the cheeses given throughout the game. Maybe something else can come out instead of health :)"
+		"tr"			"Oyunda Amacınız Size Verilen Güçleri Kullanarak Tom'u Alt Etmektir. İster hızlı olup kaçmayı tercih edin sona kalmayı deneyin isterseniz Tom'u ilk alt eden olup oyunu kazanın. Oyun boyunca verilen peynirler ile canınızı yükseltin. Belki can yerine başka birşey de çıkabilir :)"
+	}
+
+    "Game Start Message Tom"
+    {
+		"en"			"Your aim in the game is to defeat Jerry by using the powers given to you. Beware, if you die, Jerry who killed you wins. Increase your life with the milk given throughout the game. Maybe something else can come out instead of life :)"
+		"tr"			"Oyunda Amacınız Size Verilen Güçleri Kullanarak Jerry'leri Alt Etmektir. Dikkat edin ölürseniz sizi öldüren Jerry kazanır. Oyun boyunca verilen sütler ile canınızı yükseltin. Belki can yerine başka birşey de çıkabilir :)"
+	}
+
+    "Player Spawn Error"
+    {
+		"en"			"{orchid}Tom and Jerry {darkred}active. That's why you can't be revived."
+		"tr"			"{orchid}Tom ve Jerry {darkred}aktif. Bu yüzden canlanamazsın."
+	}
+
+    "Game Start"
+    {
+		"en"			"{orchid}Tom and Jerry {green}started. May luck be with you."
+		"tr"			"{orchid}Tom ve Jerry {green}başladı. Şans sizinle olsun."
+	}
+
+    "Game Start Info"
+    {
+        "#format" 		"{1:N}"
+		"en"			"{orchid}Tom and Jerry {green}activated by {darkblue}{1} {green}. The game will start in {darkred}5 {green}seconds."
+		"tr"			"{darkblue}{1} {green}tarafından {orchid}Tom ve Jerry {green}aktif edildi. Oyun {darkred}5 {green}saniye sonra başlayacak."
+	}
+
+    "No Winner Found"
+    {
+		"en"			"{darkred}The game ended with Jerry remaining, but no winner was found."
+		"tr"			"{darkred}Oyun sona kalan Jerry ile bitti fakat kazanan bulunamadı."
+	}
+
+    "Winner"
+    {
+        "#format" 		"{1:N}"
+		"en"			"{green}Jerry {darkred}{1} {green} won the orchid}Tom and Jerry {green}game. Congratulations."
+		"tr"			"{orchid}Tom ve Jerry {green}oyununu sona kalarak {darkred}{1} {green}adlı Jerry kazandı. Tebrikler."
+	}
+
+    "Jerry is Dead"
+    {
+        "#format" 		"{1:N}{2:d}"
+		"en"			"{lightblue}Jerry {darkred}{1} {lightblue} is dead. Remaining Jerry: {green}{2}"
+		"tr"			"{darkred}{1} {lightblue}adlı Jerry öldü. Kalan Jerry sayısı: {green}{2}"
+	}
+
+    "No Winner Found 2"
+    {
+        "#format" 		"{1:N}"
+		"en"			"{darkred}The game ends with the death of {orchic}{1} {darkred}, but Jerry who killed Tom could not be found."
+		"tr"			"{darkred}Oyun {orchic}{1} {darkred}adlı Tom'un ölmesi ile bitti fakat onu öldüren Jerry bulunamadı."
+	}
+
+    "Winner 2"
+    {
+        "#format" 		"{1:N}{2:N}"
+		"en"			"{orchid}Tom and Jerry {green}game ended with Tom {darkred}{2} {green} dead. Jerry named {darkred}{1} {green} won. Congratulations."
+		"tr"			"{orchid}Tom ve Jerry {green}oyununu {darkred}{2} {green}adlı Tom ölerek bitti. {darkred}{1} {green}adlı Jerry kazandı. Tebrikler."
+	}
+
+	"Player Prize Health"
+    {
+        "#format" 		"{1:N}{2:d}{3:s}"
+		"en"			"{orchid}{1} {green}{darkred}{3} {darkblue}{2} {green}regained health."
+		"tr"			"{orchid}{1} {green}adlı {darkred}{3} {darkblue}{2} {green}sağlık kazandı."
+	}
+
+	"Player Prize Weapon"
+    {
+        "#format" 		"{1:N}{2:s}{3:s}"
+		"en"			"{orchid}{1} {green}{darkred}{3} {darkblue}{2} {green}won."
+		"tr"			"{orchid}{1} {green}adlı {darkred}{3} {darkblue}{2} {green}kazandı."
+	}
+}

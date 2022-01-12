@@ -1,0 +1,43 @@
+"VertexLitGeneric"
+{
+
+	// MAIN SETTINGS
+	$basetexture                "models\player\custom\mertexe\jerry\jerry"      // Diffuse Map
+
+	$halflambert                1
+
+	// PHONG
+	$phong                      1
+	$phongboost                 0.5
+	$phongfresnelranges         "[.83 .83 1]"
+	$phongtint                  "[1 1 1]"
+	$normalmapalphaphongmask    1
+
+	// ENVIRONMENT MAP
+	$envmap                     env_cubemap
+	$envmaptint                 "[.04 .04 .04]"
+	$envmapfresnel              1
+	$normalmapalphaenvmapmask   1
+
+	// RIM LIGHT
+	$rimlight                   1
+	$rimlightexponent           66
+	$rimlightboost              0.83
+	$rimmask                    1
+
+
+	$detailscale                1
+	$detailblendfactor          0.001
+	$detailblendmode            0
+	$detailAmount               0
+
+"Proxies" 
+{
+"AnimatedTexture" 
+{ 
+"animatedTextureVar" "$basetexture" 
+"animatedTextureFrameNumVar" "$frame" 
+"animatedTextureFrameRate" "0.5" 
+}
+} 
+}

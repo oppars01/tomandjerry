@@ -1,0 +1,6 @@
+"MonitorScreen"
+{
+	"$basetexture" "models/csgo-turkiye_com/plugin/tomandjerry/start"
+	"$translucent" 1
+}
+
