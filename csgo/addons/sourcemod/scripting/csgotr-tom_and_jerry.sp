@@ -239,7 +239,7 @@ int MenuCallback(Menu menu, MenuAction action, int client, int param2)
                         f_tom_pos[0] = 0.0;
                         f_tom_pos[1] = 0.0;
                         f_tom_pos[2] = 0.0;
-                    }else  CPrintToChat(client, "%s%s %t", s_tag_color, s_tag, "Jerry Success");
+                    }else  CPrintToChat(client, "%s%s %t", s_tag_color, s_tag, "Tom Success");
                 } 
             }else if(StrEqual(option, "jerry", true)){
                 if(b_game_status)CPrintToChat(client, "%s%s %t", s_tag_color, s_tag, "Game Active");
@@ -251,7 +251,7 @@ int MenuCallback(Menu menu, MenuAction action, int client, int param2)
                         f_jerry_pos[0] = 0.0;
                         f_jerry_pos[1] = 0.0;
                         f_jerry_pos[2] = 0.0;
-                    }else  CPrintToChat(client, "%s%s %t", s_tag_color, s_tag, "Tom Success");
+                    }else  CPrintToChat(client, "%s%s %t", s_tag_color, s_tag, "Jerry Success");
                 }
             }
             TomAndJerry_Menu().Display(client, MENU_TIME_FOREVER);
